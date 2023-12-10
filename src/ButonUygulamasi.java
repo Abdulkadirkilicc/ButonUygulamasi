@@ -3,17 +3,23 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+//1220505050 Abdulkadir Kılıç
+
+// ButonUygulamasi classını JButton sınıfından Kalıtıyoruz.
 public class ButonUygulamasi extends JButton {
 
+    // Pasif ve aktif renkleri tanımladık.
     private static Color pasifRenk = Color.RED;
     private static Color aktifRenk = Color.GREEN;
-
+    
+    // GraphQL şema URL'si ve butonun durumu için tanımlamalar yaptım.
     private String graphqlSchemaUrl;
     private boolean isActive;
 
     private ImageIcon aktifIcon;
     private ImageIcon pasifIcon;
-
+    
+    // Yapıtıcı metod tanımını yaptım
     public ButonUygulamasi(String graphqlSchemaUrl) {
         this.graphqlSchemaUrl = graphqlSchemaUrl;
         this.isActive = false;
@@ -31,7 +37,8 @@ public class ButonUygulamasi extends JButton {
             }
         });
     }
-
+    
+  // Butonun varsayılan özelliklerini ayarlayan metot tanımını yaptım.
     private void setDefaults() {
         setBackground(pasifRenk);
         setBorderPainted(true);
@@ -41,28 +48,33 @@ public class ButonUygulamasi extends JButton {
         setPreferredSize(new Dimension(100, 100));
         setIcon(pasifIcon);
     }
-
+    
+// Butona tıklandığında çalışacak metotu çağırdım.
     private void handleButtonClick() {
         if (!isActive) {
             setButtonActive();
             runGraphQLMutation();
-        } else {
+        } else { 
+            // Buton daha önce basılmışsa bu gövde çalışacak
             setButtonPasif();
             System.out.println("Değişiklik Yaptınız. Butonu Pasif Hale Getirdiniz.");
         }
     }
-
+    
+ // Butonu tıklanıldığı  aktif hale getiren metot tanımı.
     private void setButtonActive() {
         setBackground(aktifRenk);
         setIcon(aktifIcon);
         isActive = true;
     }
-
+    
+    // Basılmış butonu pasif hale getiren metot tanımı.
     private void setButtonPasif() {
         setDefaults();
         isActive = false;
     }
-
+    
+// GraphQL şemasında bir mutation çalıştırma işlemi gerçekleştiren metot.
     private void runGraphQLMutation() {
         System.out.println("Değişiklik Yaptınız. " + graphqlSchemaUrl);
     }
