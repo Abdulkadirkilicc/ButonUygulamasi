@@ -1,7 +1,7 @@
 # ButonUygulamasi
 1220505050 Abdulkadir Kılıç
 # Buton Uygulamasi Çalıştırılması
-$ cd src/ && javac Main.java && java Main
+- $ cd src/ && javac Main.java && java Main
 # Buton Uygulamasi Hakkında Bilgi 
 - Uygulamayı çalıştırdıktan sonra karşımıza aşşağıdaki gibi 4x4'lük 16 butonu olan  Buton Uygulaması çıkacaktır.
 ![1](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/4fb864bd-7ef2-45bd-addd-79d5dc653d0c)
