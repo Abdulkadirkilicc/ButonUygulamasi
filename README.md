@@ -29,11 +29,11 @@ GraphQL, modern web uygulamalarında veri sorgulama için kullanılan etkili bir
 GraphQL, REST tabanlı web projelerindeki veri işleme zorluklarını aşmak için geliştirilmiştir. Proje özelliklerine göre farklı gereksinimleri karşılamak üzere tasarlanmış olup , veri sorgulama, güncelleme ve silme işlemlerini daha etkili bir şekilde yönetme olanağını bizlere sağlıyor. Farklı projelerdeki gereksinimleri düşünerek zaman ve zahmet emeği önemli ölçüde azaltıyor. Karmaşık sorguların hızlı bir şekilde oluşturulmasına imkan tanıyor.
 Bunlardan yola çıkarak, GraphQL, veri sorgulama ve işleme süreçlerini optimize eden, esnek ve performanslı bir teknolojidir. Farklı dillerde geliştirilen web projelerine entegre edilebilir ve geniş veri setlerinin etkili bir şekilde yönetilmesine katkıda bulunabilir.
 GrapQL karşımıza çıkan temel kavramlar şunlardır;
-Type (Tip) : Tipleri farklı türdeki verileri birbirlerinden ayırt etmek için kullanır ve tanımlarız.
-Field (Alan) : Bir veri tipinin kendine has özelliklerini belirten ve belirli bir tipte veri tutan alanları (field) vardır.
-Query (Sorgu) : Sunucudan, istenilen biçimdeki ve içinde veri olan yanıtı tanımlamak için kullanılan spesifik istektir.
+- Type (Tip) : Tipleri farklı türdeki verileri birbirlerinden ayırt etmek için kullanır ve tanımlarız.
+- Field (Alan) : Bir veri tipinin kendine has özelliklerini belirten ve belirli bir tipte veri tutan alanları (field) vardır.
+- Query (Sorgu) : Sunucudan, istenilen biçimdeki ve içinde veri olan yanıtı tanımlamak için kullanılan spesifik istektir.
 
-Sorgu (Query): İstemciler, ihtiyaç duydukları veriyi belirli bir yapıda sormak için GraphQL sorgularını kullanır. Bu sayede gereksiz verileri  önlenir ve istemci sadece ihtiyacı olan veriyi alır veri kalabalığı önlenmiş olur.
+Sorgu (Query): İstemciler, ihtiyaç duydukları veriyi belirli bir yapıda sormak için GraphQL sorgularını kullanır. Bu sayede gereksiz verileri  önlenir ve istemcide sadece ihtiyacı olan veriyi alır veri kalabalığı önlenmiş olur.
 
 
 ![6](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/d2101bd0-2d1b-4daa-81ad-e26128e8199d)
@@ -41,7 +41,7 @@ Bu sorgu, ID'si 100  olan bir kullanıcının adını ve e-posta adresini getiri
 
 
 
-Mutasyon (Mutation): Veri üzerinde değişiklik yapmak için kullanılır. Yeni veri eklemek, güncellemek veya silmek için mutasyonlar kullanılır.
+Mutasyon (Mutation): Veri üzerinde değişiklik yapmak için kullanılır. Örneğin; Yeni veri eklemek, güncellemek veya silmek için mutasyonlar kullanılır.
 
 ![7](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/7baada52-95c3-43a2-b7b1-4bd7bd486119)
 Bu mutasyon, ID'si 100 olan kullanıcının adını günceller.
