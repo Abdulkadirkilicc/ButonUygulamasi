@@ -47,7 +47,7 @@ GrapQL karşımıza çıkan temel kavramlar şunlardır;
 - Bu mutasyon, ID'si 100 olan kullanıcının adını günceller.
 
 Yani şu şekilde özetleyebiliriz;
-API geliştiricisi istemcinin üzerinde sorgu ve mutasyon gerçekleştirebileceği veri türlerini ve bahsi geçen sorgu ve mutasyonları tanımlamak için GraphQL şeması oluşturur. GraphQL şeması nesne tiplerinin, sorguların ve mutasyonların tanımından oluşur. Bu tanımlar belirli tipteki nesnelerin hangi alanlara sahip olduğunu, hangi veri tipinin sorgulanabileceğini, nasıl sorguların kullanılacağını ve hangi durumlarda sorgulanabileceğini belirtir. Ayrıca geliştirici query (sorgu) ve mutation (mutasyon) şemada belirtir. Belirtilen sorgu ve mutasyonlar geliştirici tarafından çözücü   fonksiyonlarla ilişkilendirilir. GraphQL tanımı yapılmış sorgu ve mutasyonları gerçekleştirmek için çözücülere ihtiyaç duyar.
+- API geliştiricisi istemcinin üzerinde sorgu ve mutasyon gerçekleştirebileceği veri türlerini ve bahsi geçen sorgu ve mutasyonları tanımlamak için GraphQL şeması oluşturur. GraphQL şeması nesne tiplerinin, sorguların ve mutasyonların tanımından oluşur. Bu tanımlar belirli tipteki nesnelerin hangi alanlara sahip olduğunu, hangi veri tipinin sorgulanabileceğini, nasıl sorguların kullanılacağını ve hangi durumlarda sorgulanabileceğini belirtir. Ayrıca geliştirici query (sorgu) ve mutation (mutasyon) şemada belirtir. Belirtilen sorgu ve mutasyonlar geliştirici tarafından çözücü   fonksiyonlarla ilişkilendirilir. GraphQL tanımı yapılmış sorgu ve mutasyonları gerçekleştirmek için çözücülere ihtiyaç duyar.
 İstemci ya da istemci geliştiricisi de API geliştiricisinin tanımladığı şema dahilinde kendi amacına uygun bir biçimde sorgu ve mutasyonları kullanabilir.
 
 # GraphQL Avantajları
