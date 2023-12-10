@@ -8,20 +8,20 @@ public class ButonUygulamasi extends JButton {
     private static Color pasifRenk = Color.RED;
     private static Color aktifRenk = Color.GREEN;
 
-    private static ButonUygulamasi[][] buttons; 
-    private static ButonUygulamasi activeButton = null;
-
     private String graphqlSchemaUrl;
+    private boolean isActive;
 
     private ImageIcon aktifIcon;
     private ImageIcon pasifIcon;
 
     public ButonUygulamasi(String graphqlSchemaUrl) {
         this.graphqlSchemaUrl = graphqlSchemaUrl;
+        this.isActive = false;
 
         // aktif ve pasif icon nesneleri
-        aktifIcon = new ImageIcon(getClass().getResource("a.jpg"));
+      aktifIcon = new ImageIcon(getClass().getResource("a.jpg"));
         pasifIcon = new ImageIcon(getClass().getResource("p.jpg"));
+
 
         setDefaults();
         addActionListener(new ActionListener() {
@@ -43,26 +43,24 @@ public class ButonUygulamasi extends JButton {
     }
 
     private void handleButtonClick() {
-        if (activeButton == this) {
-            setButtonPasif();
-        } else {
-            if (activeButton != null) {
-                activeButton.setButtonPasif();
-            }
+        if (!isActive) {
             setButtonActive();
             runGraphQLMutation();
+        } else {
+            setButtonPasif();
+            System.out.println("Değişiklik Yaptınız. Butonu Pasif Hale Getirdiniz.");
         }
     }
 
     private void setButtonActive() {
         setBackground(aktifRenk);
         setIcon(aktifIcon);
-        activeButton = this;
+        isActive = true;
     }
 
     private void setButtonPasif() {
         setDefaults();
-        activeButton = null;
+        isActive = false;
     }
 
     private void runGraphQLMutation() {
@@ -76,12 +74,9 @@ public class ButonUygulamasi extends JButton {
                 JFrame frame = new JFrame("Button Kontrol Paneli");
                 frame.setLayout(new GridLayout(4, 4));
 
-                buttons = new ButonUygulamasi[4][4];
-
                 for (int i = 0; i < 4; i++) {
                     for (int j = 0; j < 4; j++) {
                         ButonUygulamasi button = new ButonUygulamasi("Butonu Aktif Hale Getirdiniz.");
-                        buttons[i][j] = button;
                         frame.add(button);
                     }
                 }
