@@ -2,24 +2,24 @@
 # Buton Uygulamasi Çalıştırılması
 $ cd src/ && javac Main.java && java Main
 # Buton Uygulamasi Hakkında Bilgi 
-Uygulamayı çalıştırdıktan sonra karşımıza aşşağıdaki gibi 4x4'lük 16 butonu olan  Buton Uygulaması çıkacaktır.
+- Uygulamayı çalıştırdıktan sonra karşımıza aşşağıdaki gibi 4x4'lük 16 butonu olan  Buton Uygulaması çıkacaktır.
 ![1](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/4fb864bd-7ef2-45bd-addd-79d5dc653d0c)
 
-Butona tıklanıldığında ise tıklanılan buton aktif hale gelecektir.Diğer butonlara tıklanılmadığı için diğerleri pasif halde kalacaktır. 
+- Butona tıklanıldığında ise tıklanılan buton aktif hale gelecektir.Diğer butonlara tıklanılmadığı için diğerleri pasif halde kalacaktır. 
 
 ![2](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/5ac4923d-b6de-4baa-9afb-3681eedeb6b5)
 
-Butona tıklanıldığında ise  bize hayali bir mutation olarak ekranda değişiklik yaptığımızı konsola  yazdıracak.
+- Butona tıklanıldığında ise  bize hayali bir mutation olarak ekranda değişiklik yaptığımızı konsola  yazdıracak.
 ![4](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/101ca051-6f9d-4da4-b43c-317e828620f6)
 
-Birden fazla butonu aktif yapabiliriz. 
+- Birden fazla butonu aktif yapabiliriz. 
 ![3](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/dd561885-883f-4639-b5ef-2b8fc9f5b617)
 
-Bu butonlardan istediğimizi pasif hale getirebiliriz ve aşşağıdaki gibi ekran çıkacak karşımıza 
+- Bu butonlardan istediğimizi pasif hale getirebiliriz ve aşşağıdaki gibi ekran çıkacak karşımıza 
 ![4](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/9ae30d3c-294b-46dd-a2ed-a67fd84773ae)
 
 
-Bu değişikliklerden sonra karşımıza aşşağıdaki gibi ekran çıkacak, sırasıyla aktif hale getirdiğimiz ve pasif hale getirdiğimiz butonları konsola yazdıracak.
+- Bu değişikliklerden sonra karşımıza aşşağıdaki gibi ekran çıkacak, sırasıyla aktif hale getirdiğimiz ve pasif hale getirdiğimiz butonları konsola yazdıracak.
 
 ![5](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/c447e4c3-dc54-4189-ae5d-c0062aa38afb)
 
@@ -33,18 +33,18 @@ GrapQL karşımıza çıkan temel kavramlar şunlardır;
 - Field (Alan) : Bir veri tipinin kendine has özelliklerini belirten ve belirli bir tipte veri tutan alanları (field) vardır.
 - Query (Sorgu) : Sunucudan, istenilen biçimdeki ve içinde veri olan yanıtı tanımlamak için kullanılan spesifik istektir.
 
-Sorgu (Query): İstemciler, ihtiyaç duydukları veriyi belirli bir yapıda sormak için GraphQL sorgularını kullanır. Bu sayede gereksiz verileri  önlenir ve istemcide sadece ihtiyacı olan veriyi alır veri kalabalığı önlenmiş olur.
+- Sorgu (Query): İstemciler, ihtiyaç duydukları veriyi belirli bir yapıda sormak için GraphQL sorgularını kullanır. Bu sayede gereksiz verileri  önlenir ve istemcide sadece ihtiyacı olan veriyi alır veri kalabalığı önlenmiş olur.
 
 
 ![6](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/d2101bd0-2d1b-4daa-81ad-e26128e8199d)
-Bu sorgu, ID'si 100  olan bir kullanıcının adını ve e-posta adresini getirir. 
+- Bu sorgu, ID'si 100  olan bir kullanıcının adını ve e-posta adresini getirir. 
 
 
 
-Mutasyon (Mutation): Veri üzerinde değişiklik yapmak için kullanılır. Örneğin; Yeni veri eklemek, güncellemek veya silmek için mutasyonlar kullanılır.
+- Mutasyon (Mutation): Veri üzerinde değişiklik yapmak için kullanılır. Örneğin; Yeni veri eklemek, güncellemek veya silmek için mutasyonlar kullanılır.
 
 ![7](https://github.com/Abdulkadirkilicc/ButonUygulamasi/assets/115181323/7baada52-95c3-43a2-b7b1-4bd7bd486119)
-Bu mutasyon, ID'si 100 olan kullanıcının adını günceller.
+- Bu mutasyon, ID'si 100 olan kullanıcının adını günceller.
 
 Yani şu şekilde özetleyebiliriz;
 API geliştiricisi istemcinin üzerinde sorgu ve mutasyon gerçekleştirebileceği veri türlerini ve bahsi geçen sorgu ve mutasyonları tanımlamak için GraphQL şeması oluşturur. GraphQL şeması nesne tiplerinin, sorguların ve mutasyonların tanımından oluşur. Bu tanımlar belirli tipteki nesnelerin hangi alanlara sahip olduğunu, hangi veri tipinin sorgulanabileceğini, nasıl sorguların kullanılacağını ve hangi durumlarda sorgulanabileceğini belirtir. Ayrıca geliştirici query (sorgu) ve mutation (mutasyon) şemada belirtir. Belirtilen sorgu ve mutasyonlar geliştirici tarafından çözücü   fonksiyonlarla ilişkilendirilir. GraphQL tanımı yapılmış sorgu ve mutasyonları gerçekleştirmek için çözücülere ihtiyaç duyar.
